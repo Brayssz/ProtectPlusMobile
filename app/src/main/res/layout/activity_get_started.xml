@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GetStarted">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/protectplusbackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-25dp"
+        android:gravity="bottom">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:padding="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="19dp"
+            android:background="@drawable/card_with_outline"
+            android:clipChildren="false"
+            app:strokeColor="@color/dark_gray"
+            app:strokeWidth="2dp"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:gravity="center"
+                android:paddingHorizontal="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Let's"
+                    android:textColor="@color/black"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="left" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Learning"
+                    android:textColor="@color/black"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="left" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Protect Plus: Empowering learners with interactive tools to master disaster response and safety, ensuring preparedness and resilience in every situation."
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Get Started"
+                        android:height="60dp"
+                        android:backgroundTint="@color/green_btn"
+                        android:textColor="@android:color/white"
+                        app:strokeColor="@color/dark_gray"
+                        app:cornerRadius="10dp"
+                        app:strokeWidth="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

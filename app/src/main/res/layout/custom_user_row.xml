@@ -1,0 +1,77 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="8dp"
+    android:elevation="4dp"
+    android:radius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- User ID -->
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID: 001"
+            android:textSize="14sp"
+            android:textColor="#000" />
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: John Doe"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="4dp" />
+
+        <!-- User Position -->
+        <TextView
+            android:id="@+id/user_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Position: Manager"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_marginTop="4dp" />
+
+        <!-- Edit and Delete Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="end">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/dark_gray"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F44336"
+                android:layout_marginStart="8dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/dark_gray"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

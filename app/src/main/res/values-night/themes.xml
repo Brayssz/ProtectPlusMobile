@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProtectPlus" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary branding color (the same as the login button color) -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Dark variant of the primary branding color for the status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- Color used for prominent UI elements like the FAB -->
+        <item name="colorAccent">@color/white</item>
+        <!-- Customize your theme here -->
+        <item name="android:colorBackground">@color/white</item>
+
+        <item name="colorSurface">@color/white</item> <!-- Background color of the TextInputLayout -->
+        <item name="colorOnSurface">@color/black</item> <!-- Text color and hint color -->
+        <item name="boxStrokeColor">@color/black</item> <!-- Outline color -->
+        <item name="boxStrokeErrorColor">@color/colorPrimaryDark</item>
+
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+
+    <style name="CustomDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item> <!-- Text color -->
+        <item name="android:textColor">@color/black</item> <!-- General text color -->
+        <item name="android:textColorSecondary">@color/black</item> <!-- Secondary text color -->
+        <item name="android:buttonTint">@color/colorPrimaryDark</item> <!-- Checkbox checkmark color -->
+        <item name="colorAccent">@color/colorPrimaryDark</item> <!-- Accent color for tick marks -->
+
+        <!-- Set title and message text styles -->
+        <item name="textAppearanceHeadline6">@style/CustomDialogTitle</item> <!-- Title style -->
+        <item name="textAppearanceBody1">@style/CustomDialogMessage</item> <!-- Message style -->
+    </style>
+
+    <style name="CustomDialogTitle" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item> <!-- Optional if you want to redefine the color -->
+    </style>
+
+    <style name="CustomDialogMessage" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item> <!-- Optional if you want to redefine the color -->
+    </style>
+
+    <!-- Custom style for checkboxes -->
+    <style name="CheckboxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/colorPrimaryDark</item> <!-- Checkmark color -->
+        <item name="android:textColorHint">@color/black</item> <!-- Checkbox text color -->
+    </style>
+
+    <style name="Theme.ProtectPlus" parent="Base.Theme.ProtectPlus" />
+</resources>

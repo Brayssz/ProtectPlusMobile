@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardCornerRadius="12dp"
+    app:strokeColor="@android:color/darker_gray"
+    app:strokeWidth="1dp"
+    android:layout_marginVertical="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="17dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvBarangayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barangay Poblacion"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/ivLocationImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/poblacion" />
+
+        <!-- Details -->
+        <TextView
+            android:id="@+id/tvLocationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PEOPLE’S PARK"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvLocationAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19 Lakandula St, Mariveles, 2106 Bataan"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="2dp" />
+
+        <!-- Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIRECTION"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/green_btn"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
