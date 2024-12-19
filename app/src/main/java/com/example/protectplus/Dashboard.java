@@ -39,7 +39,7 @@ public class Dashboard extends AppCompatActivity {
         recyclerView.setLayoutManager(menuLayoutManager);
 
         // Set the adapter
-        adapter = new HorizontalMenuAdapter(itemList);
+        adapter = new HorizontalMenuAdapter(itemList,this);
         recyclerView.setAdapter(adapter);
 
         // Create and populate the feedback list
