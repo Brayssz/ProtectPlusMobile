@@ -9,4 +9,12 @@
     <color name="dark_gray">#404040</color>
     <color name="green_btn">#4CAF50</color> <!-- Custom Green (Bright Button) -->
     <color name="red_pending">#F44336</color> <!-- Kept as red, assuming it is specific for pending status -->
+
+    <color name="grey">#757171</color>
+    <color name="backgroundColor">#3E454F</color>
+    <color name="lightGreen">#8BC34A</color>
+    <color name="green">#008000</color>
+    <color name="red">#FF0000</color>
+
+    <color name="transparent">#88000000</color>
 </resources>
