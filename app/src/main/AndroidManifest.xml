@@ -43,7 +43,7 @@
             android:name=".Feedback"
             android:exported="false" />
         <activity
-            android:name=".SignUp"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Login"
@@ -51,8 +51,26 @@
         <activity
             android:name=".GetStarted"
             android:exported="false" />
+
         <activity
-            android:name=".MainActivity"
+            android:name=".GameWon"
+            android:exported="false" />
+        <activity
+            android:name=".Game_Main"
+            android:exported="false" />
+        <activity
+            android:name=".PlayAgain"
+            android:exported="false" />
+        <activity
+            android:name=".Time_Up"
+            android:exported="false" />
+
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+
+        <activity
+            android:name=".HomeScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
