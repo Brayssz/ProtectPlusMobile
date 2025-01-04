@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProtectPlus"
         tools:targetApi="31">
         <activity
+            android:name=".Lecture"
+            android:exported="false" />
+        <activity
             android:name=".Lectures"
             android:exported="false" />
         <activity
@@ -46,12 +49,11 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".HomeScreen"
             android:exported="false" />
         <activity
             android:name=".GetStarted"
             android:exported="false" />
-
         <activity
             android:name=".GameWon"
             android:exported="false" />
@@ -64,13 +66,11 @@
         <activity
             android:name=".Time_Up"
             android:exported="false" />
-
         <activity
             android:name=".SignUp"
             android:exported="false" />
-
         <activity
-            android:name=".HomeScreen"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

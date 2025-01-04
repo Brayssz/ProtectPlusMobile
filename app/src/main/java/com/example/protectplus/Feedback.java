@@ -4,7 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,10 +17,13 @@ import java.util.List;
 public class Feedback extends AppCompatActivity {
 
     private RecyclerView feedbackRecyclerView;
+    private TextView BackBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
+
+        BackBtn = findViewById(R.id.back_btn);
 
         feedbackRecyclerView = findViewById(R.id.feedbackRecyclerView);
 
@@ -35,5 +43,12 @@ public class Feedback extends AppCompatActivity {
         // Set the adapter for feedbackRecyclerView
         FeedbackAdapter feedbackAdapter = new FeedbackAdapter(this, feedbackList);
         feedbackRecyclerView.setAdapter(feedbackAdapter);
+
+        BackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

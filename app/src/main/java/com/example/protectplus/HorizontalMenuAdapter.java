@@ -16,9 +16,13 @@ import java.util.List;
 public class HorizontalMenuAdapter extends RecyclerView.Adapter<HorizontalMenuAdapter.ViewHolder> { // Extend RecyclerView.Adapter<ViewHolder>
 
     private List<MenuItem> itemList; // List of your items
+    private OnMenuItemClickListener clickListener;
 
     public HorizontalMenuAdapter(List<MenuItem> itemList) {
         this.itemList = itemList;
+    }
+    public void setOnMenuItemClickListener(OnMenuItemClickListener listener) {
+        this.clickListener = listener;
     }
 
     // Create and return a ViewHolder for each item
@@ -36,6 +40,12 @@ public class HorizontalMenuAdapter extends RecyclerView.Adapter<HorizontalMenuAd
         MenuItem item = itemList.get(position);
         holder.title.setText(item.getTitle());
         holder.icon.setImageResource(item.getIcon());  // Use appropriate drawable
+
+        holder.itemView.setOnClickListener(v -> {
+            if (clickListener != null) {
+                clickListener.onMenuItemClick(item);
+            }
+        });
     }
 
     // Return the size of the data list
@@ -55,4 +65,8 @@ public class HorizontalMenuAdapter extends RecyclerView.Adapter<HorizontalMenuAd
             icon = itemView.findViewById(R.id.item_icon);
         }
     }
+    public interface OnMenuItemClickListener {
+        void onMenuItemClick(com.example.protectplus.model.MenuItem menuItem);
+    }
 }
+
