@@ -71,7 +71,7 @@ public class Dashboard extends AppCompatActivity {
                     intent = new Intent(Dashboard.this, Modules.class);
                     break;
                 case "Directory":
-                    intent = new Intent(Dashboard.this, Directory.class);
+                    intent = new Intent(Dashboard.this, Hotlines.class);
                     break;
                 case "Location":
                     intent = new Intent(Dashboard.this, EvacuationLocation.class);
