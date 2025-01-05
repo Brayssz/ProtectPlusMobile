@@ -40,6 +40,7 @@ public class Dashboard extends AppCompatActivity {
         itemList.add(new MenuItem("Directory", R.drawable.directory_icon));
         itemList.add(new MenuItem("Location", R.drawable.location_icon));
         itemList.add(new MenuItem("Certificates", R.drawable.certificates_icon));
+        itemList.add(new MenuItem("Feedback", R.drawable.about_icon));
 
         LinearLayoutManager menuLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(menuLayoutManager);
@@ -75,6 +76,9 @@ public class Dashboard extends AppCompatActivity {
                     break;
                 case "Location":
                     intent = new Intent(Dashboard.this, EvacuationLocation.class);
+                    break;
+                case "Feedback":
+                    intent = new Intent(Dashboard.this, HelpDesk.class);
                     break;
                 case "Certificates":
                     intent = new Intent(Dashboard.this, EvacuationLocation.class);
