@@ -1,15 +1,15 @@
-package com.example.protectplus;
+package com.example.protectplus.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.google.android.material.button.MaterialButton;
+import com.example.protectplus.adapter.FeedbackAdapter;
+import com.example.protectplus.R;
 
 import java.util.ArrayList;
 import java.util.List;

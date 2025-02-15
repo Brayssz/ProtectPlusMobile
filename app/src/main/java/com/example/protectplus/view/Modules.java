@@ -1,4 +1,4 @@
-package com.example.protectplus;
+package com.example.protectplus.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.protectplus.adapter.ModulesMenuAdapter;
+import com.example.protectplus.R;
 import com.example.protectplus.model.MenuItem;
 
 import java.util.ArrayList;

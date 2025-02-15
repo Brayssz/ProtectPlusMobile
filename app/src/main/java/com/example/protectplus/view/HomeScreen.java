@@ -1,4 +1,4 @@
-package com.example.protectplus;
+package com.example.protectplus.view;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.protectplus.R;
+import com.example.protectplus.adapter.GameMain;
 
 import info.hoang8f.widget.FButton;
 
@@ -25,7 +28,7 @@ public class HomeScreen extends AppCompatActivity {
         playGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeScreen.this,Game_Main.class);
+                Intent intent = new Intent(HomeScreen.this, GameMain.class);
                 startActivity(intent);
                 finish();
             }

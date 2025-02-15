@@ -1,4 +1,4 @@
-package com.example.protectplus;
+package com.example.protectplus.view;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.protectplus.R;
-import com.example.protectplus.UserAdapter;
+import com.example.protectplus.adapter.UserAdapter;
 import com.example.protectplus.model.User;
 import java.util.ArrayList;
 import java.util.List;

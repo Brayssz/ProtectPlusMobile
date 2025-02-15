@@ -1,4 +1,4 @@
-package com.example.protectplus;
+package com.example.protectplus.view;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -8,9 +8,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.protectplus.R;
+import com.example.protectplus.adapter.GameMain;
+
 import info.hoang8f.widget.FButton;
 
-public class Time_Up extends AppCompatActivity {
+public class TimeUp extends AppCompatActivity {
     FButton playAgainButton;
     TextView timeUpText;
 
@@ -26,7 +29,7 @@ public class Time_Up extends AppCompatActivity {
         playAgainButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Time_Up.this,Game_Main.class);
+                Intent intent = new Intent(TimeUp.this, GameMain.class);
                 startActivity(intent);
                 finish();
 

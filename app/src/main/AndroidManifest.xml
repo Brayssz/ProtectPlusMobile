@@ -13,64 +13,64 @@
         android:theme="@style/Theme.ProtectPlus"
         tools:targetApi="31">
         <activity
-            android:name=".Lecture"
+            android:name=".view.Lecture"
             android:exported="false" />
         <activity
-            android:name=".Lectures"
+            android:name=".view.Lectures"
             android:exported="false" />
         <activity
-            android:name=".Hotlines"
+            android:name=".view.Hotlines"
             android:exported="false" />
         <activity
-            android:name=".EvacuationLocation"
+            android:name=".view.EvacuationLocation"
             android:exported="false" />
         <activity
-            android:name=".UserManagement"
+            android:name=".view.UserManagement"
             android:exported="false" />
         <activity
-            android:name=".Modules"
+            android:name=".view.Modules"
             android:exported="false" />
         <activity
-            android:name=".Menu"
+            android:name=".view.Menu"
             android:exported="false" />
         <activity
-            android:name=".Directory"
+            android:name=".view.Directory"
             android:exported="false" />
         <activity
-            android:name=".Dashboard"
+            android:name=".view.Dashboard"
             android:exported="false" />
         <activity
-            android:name=".HelpDesk"
+            android:name=".view.HelpDesk"
             android:exported="false" />
         <activity
-            android:name=".Feedback"
+            android:name=".view.Feedback"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeScreen"
+            android:name=".view.HomeScreen"
             android:exported="false" />
         <activity
-            android:name=".GetStarted"
+            android:name=".view.GetStarted"
             android:exported="false" />
         <activity
-            android:name=".GameWon"
+            android:name=".view.GameWon"
             android:exported="false" />
         <activity
-            android:name=".Game_Main"
+            android:name=".adapter.GameMain"
             android:exported="false" />
         <activity
-            android:name=".PlayAgain"
+            android:name=".view.PlayAgain"
             android:exported="false" />
         <activity
-            android:name=".Time_Up"
+            android:name=".view.TimeUp"
             android:exported="false" />
         <activity
-            android:name=".SignUp"
+            android:name=".view.SignUp"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".view.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

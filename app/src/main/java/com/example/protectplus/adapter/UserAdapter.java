@@ -1,4 +1,4 @@
-package com.example.protectplus;
+package com.example.protectplus.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;

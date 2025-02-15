@@ -1,4 +1,4 @@
-package com.example.protectplus;
+package com.example.protectplus.adapter;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -14,12 +14,20 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.example.protectplus.view.GameWon;
+import com.example.protectplus.view.HomeScreen;
+import com.example.protectplus.view.PlayAgain;
+import com.example.protectplus.R;
+import com.example.protectplus.view.TimeUp;
+import com.example.protectplus.view.TriviaQuestion;
+import com.example.protectplus.TriviaQuizHelper;
+
 import java.util.Collections;
 import java.util.List;
 
 import info.hoang8f.widget.FButton;
 
-public class Game_Main extends AppCompatActivity {
+public class GameMain extends AppCompatActivity {
 
     FButton buttonA, buttonB, buttonC, buttonD;
     TextView questionText, triviaQuizText, timeText, resultText, coinText;
@@ -235,7 +243,7 @@ public class Game_Main extends AppCompatActivity {
     //This method is called when time is up
     //this method will navigate user to the activity Time_Up
     public void timeUp() {
-        Intent intent = new Intent(this, Time_Up.class);
+        Intent intent = new Intent(this, TimeUp.class);
         startActivity(intent);
         finish();
     }
@@ -273,7 +281,7 @@ public class Game_Main extends AppCompatActivity {
 
     //This dialog is show to the user after he ans correct
     public void correctDialog() {
-        final Dialog dialogCorrect = new Dialog(Game_Main.this);
+        final Dialog dialogCorrect = new Dialog(GameMain.this);
         dialogCorrect.requestWindowFeature(Window.FEATURE_NO_TITLE);
         if (dialogCorrect.getWindow() != null) {
             ColorDrawable colorDrawable = new ColorDrawable(Color.TRANSPARENT);

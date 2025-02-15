@@ -1,4 +1,4 @@
-package com.example.protectplus;
+package com.example.protectplus.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,6 +8,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.protectplus.adapter.FeedbackAdapter;
+import com.example.protectplus.adapter.HorizontalMenuAdapter;
+import com.example.protectplus.R;
 import com.example.protectplus.model.Feedback;
 import com.example.protectplus.model.MenuItem;
 import com.google.android.material.button.MaterialButton;
@@ -93,7 +96,7 @@ public class Dashboard extends AppCompatActivity {
         SeeMoreBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, com.example.protectplus.Feedback.class);
+                Intent intent = new Intent(Dashboard.this, com.example.protectplus.view.Feedback.class);
                 startActivity(intent);
             }
         });

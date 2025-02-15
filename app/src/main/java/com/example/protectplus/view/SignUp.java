@@ -1,15 +1,14 @@
-package com.example.protectplus;
+package com.example.protectplus.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.DatePickerDialog;
 import android.os.Bundle;
 
+import com.example.protectplus.R;
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Locale;
 
 public class SignUp extends AppCompatActivity {

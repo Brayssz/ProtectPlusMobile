@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/backgroundColor"
-    tools:context="HomeScreen">
+    tools:context=".view.HomeScreen">
     <TextView
         android:id="@+id/tQ"
         android:layout_width="match_parent"

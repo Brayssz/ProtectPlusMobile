@@ -1,4 +1,4 @@
-package com.example.protectplus;
+package com.example.protectplus.view;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.protectplus.R;
+import com.example.protectplus.adapter.GameMain;
 
 
 public class PlayAgain extends Activity {
@@ -26,7 +29,7 @@ public class PlayAgain extends Activity {
         playAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PlayAgain.this, Game_Main.class);
+                Intent intent = new Intent(PlayAgain.this, GameMain.class);
                 startActivity(intent);
                 finish();
             }

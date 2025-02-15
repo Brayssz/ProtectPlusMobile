@@ -1,7 +1,9 @@
-package com.example.protectplus;
+package com.example.protectplus.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.protectplus.R;
 
 public class GetStarted extends AppCompatActivity {
 

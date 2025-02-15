@@ -1,4 +1,4 @@
-package com.example.protectplus;
+package com.example.protectplus.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.protectplus.R;
 import com.example.protectplus.model.LocationModel;
 
 import java.util.List;
