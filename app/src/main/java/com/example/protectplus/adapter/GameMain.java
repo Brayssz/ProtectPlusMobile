@@ -14,13 +14,14 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.example.protectplus.database.TriviaQuizHelper;
 import com.example.protectplus.view.GameWon;
 import com.example.protectplus.view.HomeScreen;
 import com.example.protectplus.view.PlayAgain;
 import com.example.protectplus.R;
 import com.example.protectplus.view.TimeUp;
 import com.example.protectplus.view.TriviaQuestion;
-import com.example.protectplus.TriviaQuizHelper;
+
 
 import java.util.Collections;
 import java.util.List;
