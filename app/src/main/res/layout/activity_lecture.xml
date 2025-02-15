@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EvacuationLocation">
+    tools:context=".Lecture">
 
     <!-- Main container -->
     <LinearLayout
@@ -13,7 +13,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Back Button -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,18 +30,17 @@
                 android:drawablePadding="8dp" />
         </LinearLayout>
 
-        <!-- Title Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:paddingVertical="16dp">
+            android:paddingVertical="7dp">
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/location_icon"
+                android:src="@drawable/flood_icon"
                 android:layout_marginEnd="12dp" />
 
             <LinearLayout
@@ -54,8 +52,8 @@
                     android:id="@+id/tvTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Flood"
-                    android:textSize="22sp"
+                    android:text="Flood Awareness "
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@android:color/black" />
 
@@ -63,39 +61,53 @@
                     android:id="@+id/tvSubtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Evacuation"
+                    android:text="Lecture"
                     android:textSize="18sp"
                     android:textColor="@android:color/darker_gray" />
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Location Name -->
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:paddingBottom="12dp">
-
-            <TextView
-                android:id="@+id/tvLocation"
-                android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12sp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="MARIVELES"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/black" />
+                app:strokeColor="@color/dark_gray"
+                app:strokeWidth="1sp">
+
+                <com.github.barteksc.pdfviewer.PDFView
+                    android:id="@+id/pdfView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12sp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/take_quiz_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="60dp"
+                android:backgroundTint="@color/green_btn"
+                android:text="Take Quiz"
+                app:cornerRadius="11dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/dark_gray"
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
-        <!-- RecyclerView -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:clipToPadding="false"
-            android:paddingTop="8dp" />
+
+
 
     </LinearLayout>
+
+
 
 </RelativeLayout>
